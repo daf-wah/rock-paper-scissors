@@ -1,8 +1,7 @@
 "use strict";
 
-// const getPlayerOneInput = prompt("Rock, Paper, or Scissors?");
-
 function playerOne() {
+  const getPlayerOneInput = prompt("Rock, Paper, or Scissors?");
   const playerOneSelection = getPlayerOneInput.toLowerCase();
   return playerOneSelection;
 }
@@ -17,8 +16,40 @@ function cpuInput() {
 }
 
 function startGame() {
-  playerOne();
-  cpuInput();
+  for (let i = 5; i > 0; i--) {
+    const playerOneSelection = playerOne();
+    const cpuSelection = cpuInput();
 
-  let result = 
+    if (playerOneSelection === cpuSelection) {
+      console.log(
+        `Player One: ${playerOneSelection} / CPU: ${cpuSelection}  We have a draw!`
+      );
+    } else if (playerOneSelection === "rock" && cpuSelection === "paper") {
+      console.log(
+        `Player One: ${playerOneSelection} / CPU: ${cpuSelection}  CPU Wins!`
+      );
+    } else if (playerOneSelection === "rock" && cpuSelection === "scissors") {
+      console.log(
+        `Player One: ${playerOneSelection} / CPU: ${cpuSelection}  Player One Wins!`
+      );
+    } else if (playerOneSelection === "paper" && cpuSelection === "rock") {
+      console.log(
+        `Player One: ${playerOneSelection} / CPU: ${cpuSelection}  Player One Wins!`
+      );
+    } else if (playerOneSelection === "paper" && cpuSelection === "scissors") {
+      console.log(
+        `Player One: ${playerOneSelection} / CPU: ${cpuSelection}  CPU Wins!`
+      );
+    } else if (playerOneSelection === "scissors" && cpuSelection === "rock") {
+      console.log(
+        `Player One: ${playerOneSelection} / CPU: ${cpuSelection}  CPU Wins!`
+      );
+    } else if (playerOneSelection === "scissors" && cpuSelection === "paper") {
+      console.log(
+        `Player One: ${playerOneSelection} / CPU: ${cpuSelection}  Player One Wins!`
+      );
+    }
+  }
 }
+
+startGame();
