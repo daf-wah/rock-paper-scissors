@@ -16,7 +16,8 @@ h1 {
   font-size: 6rem;
   margin: 1em;
   text-transform: uppercase;
-  color: #4b410d;
+  color: #443d2f;
+  line-height: 1em;
 }
 
 .heading {
@@ -28,6 +29,18 @@ h1 {
 
 h3 {
   font-size: 3rem;
+  color: #d9c196;
+  background-color: #07090d;
+  padding: 1rem 4rem;
+  border-radius: 1rem;
+}
+
+.player {
+  color: #b5b5fa;
+}
+
+.cpu {
+  color: #f08a8a;
 }
 
 .buttons {
@@ -43,4 +56,6 @@ button {
   background-color: #ece4ef;
   color: #4b410d;
   box-shadow: 2px 5.4px 6.8px -0.7px;
+  text-transform: uppercase;
+  border-radius: 1rem;
 }
