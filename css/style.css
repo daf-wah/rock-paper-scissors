@@ -1,0 +1,46 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url("/img/rockPaperScissors.jpg");
+  background-size: contain;
+}
+
+h1 {
+  text-align: center;
+  font-size: 6rem;
+  margin: 1em;
+  text-transform: uppercase;
+  color: #4b410d;
+}
+
+.heading {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3em;
+}
+
+h3 {
+  font-size: 3rem;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button {
+  padding: 3rem 6rem;
+  font-size: 3rem;
+  margin: 0 8em 2em;
+  background-color: #ece4ef;
+  color: #4b410d;
+  box-shadow: 2px 5.4px 6.8px -0.7px;
+}
