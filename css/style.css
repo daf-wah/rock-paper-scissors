@@ -14,10 +14,16 @@ body {
 h1 {
   text-align: center;
   font-size: 6rem;
-  margin: 1em;
+  margin: 0.75em;
   text-transform: uppercase;
   color: #443d2f;
   line-height: 1em;
+}
+
+.result {
+  text-align: center;
+  margin-bottom: 3em;
+  font-size: 2rem;
 }
 
 .heading {
@@ -36,11 +42,11 @@ h3 {
 }
 
 .player {
-  color: #b5b5fa;
+  color: #ddddfa;
 }
 
 .cpu {
-  color: #f08a8a;
+  color: #f7c5c5;
 }
 
 .buttons {
